@@ -31,15 +31,14 @@
     */
     document.addEventListener('DOMContentLoaded', (event) => {
       const section = document.querySelector('section');
-      console.log(section);
-      console.dir(section);
+
       section.style.margin = "50px";
       section.style.backgroundColor = "dimgray";
 
-      const lastHeading = section.h4;
+      const lastHeading = section.querySelector('h4');
 
-      // lastHeading.color = "red";
-      // lastHeading.style.backgroundColor = "white";
+      lastHeading.style.color = "red";
+      lastHeading.style.backgroundColor = "white";
     })
 
 
