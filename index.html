@@ -29,11 +29,24 @@
     /*
     PROBLEM 4: Modify the section element's inline style to include a 50px margin and a " dimgray " background color. Modify the last heading element to have inline style color red, background color white, margin 35px, and text align center.
     */
-    //ENTER YOUR CODE IN THE APPROPRIATE ELEMENT
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const section = document.querySelector('section');
+      console.log(section);
+      console.dir(section);
+      section.style.margin = "50px";
+      section.style.backgroundColor = "dimgray";
+
+      const lastHeading = section.h4;
+
+      // lastHeading.color = "red";
+      // lastHeading.style.backgroundColor = "white";
+    })
+
 
     /*
     PROBLEM 5 (DEBUGGING): How could you test the effect of your font choices in the body element? What could you do to see the page in Geneva or Tahoma or sans-serif?
     */
+    // Use styles toggle in Elements section of inspector. For font styles, remove preceding font to view next font available
 
   </script>
   <section
